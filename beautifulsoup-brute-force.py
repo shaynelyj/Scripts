@@ -21,7 +21,7 @@ for line in file:
     soup=BeautifulSoup(r.text,'html.parser')
     user_token=soup.find_all('input')[3]['value']
     payload={
-		'username':'admin',
+	'username':'admin',
         'password':line,
         'user_token':user_token,
         'Login':'Login'
