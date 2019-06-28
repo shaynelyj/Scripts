@@ -13,7 +13,7 @@ header={
 	'Connection': 'close',
 	'Upgrade-Insecure-Requests': '1'
 }
-file=open('a.txt','r')
+file=open('password.txt','r')
 for line in file:
     line=line.strip()
     s=requests.Session()
