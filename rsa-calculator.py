@@ -143,7 +143,7 @@ def return_m():
         except:
             m="-"
 
-print("Go to https://www.alpertron.com.ar/ECM.HTM to determine p and q or if n is prime.")
+print("Go to http://factordb.com/index.php to determine p and q or if n is prime.")
 ask_p()
 ask_q()
 ask_n()
