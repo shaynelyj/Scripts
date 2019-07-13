@@ -1,3 +1,6 @@
+#Amend "p=remote"
+#When executing, run "python aes-ecb-brute-force.py | grep Flag"
+
 from pwn import *
 q='abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_{@}$!"#%&()*+,-./:;<=>?[]^`|~'
 k=""
