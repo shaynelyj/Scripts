@@ -12,7 +12,7 @@ for c in ct:
     original_block.append(c.decode('hex'))
 
 pt = ''
-for n_block in range(4,-1,-1):
+for n_block in range(len(ct)-2,-1,-1):
     zero_byte = 15
     pad_str = ord('\x01')
     inter_state = []
