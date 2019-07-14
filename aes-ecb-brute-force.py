@@ -10,6 +10,7 @@ for z in range(48):
 		prompt=p.readuntil('situation report: ')
 		p.sendline("x"*(59-len(k))+"fying code is: "+k+_+"Y"*(48-len(k)))
 		e=p.read(4096)
+		p.close()
 		if e[224:256]==e[384:416]:
 			k+=_
 			print("Flag: %s" %(k))
