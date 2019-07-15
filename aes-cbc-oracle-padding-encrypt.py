@@ -1,3 +1,9 @@
+'''
+If paddingoracle not installed, go to https://github.com/mwielgoszewski/python-paddingoracle 
+or git clone https://github.com/mwielgoszewski/python-paddingoracle.git
+Go to directory and enter python setup.py install
+'''
+
 from pwn import *
 from paddingoracle import BadPaddingException, PaddingOracle
 import json
