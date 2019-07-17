@@ -1,6 +1,6 @@
 from __future__ import print_function
-from Crypto.Util.number import inverse
-from pwn import unhex
+from Crypto.Util.number import inverse, long_to_bytes
+from pwn import *
 
 def ask_p():
     global p
@@ -170,5 +170,4 @@ print("m:{}".format(m))
 print("c:{}".format(c))
 
 if m!="-":
-    flag = unhex(hex(m)[2:])
-    print('\nFlag: {}'.format(flag))
+    print('\nFlag: {}'.format(long_to_bytes(m))
