@@ -2,62 +2,10 @@ from __future__ import print_function
 from Crypto.Util.number import inverse, long_to_bytes
 from pwn import *
 
-def ask_p():
-    global p
-    try:
-        p=int(input("p:"))
-    except:
-        p="-"
-        
-def ask_q():
-    global q
-    try:
-        q=int(input("q:"))
-    except:
-        q="-"
+e= 3
+n= 374159235470172130988938196520880526947952521620932362050308663243595788308583992120881359365258949723819911758198013202644666489247987314025169670926273213367237020188587742716017314320191350666762541039238241984934473188656610615918474673963331992408750047451253205158436452814354564283003696666945950908549197175404580533132142111356931324330631843602412540295482841975783884766801266552337129105407869020730226041538750535628619717708838029286366761470986056335230171148734027536820544543251801093230809186222940806718221638845816521738601843083746103374974120575519418797642878012234163709518203946599836959811
+c= 2205316413931134031046440767620541984801091216351222789180582564557328762455422721368029531360076729972211412236072921577317264715424950823091382203435489460522094689149595951010342662368347987862878338851038892082799389023900415351164773
 
-def ask_n():
-    global n
-    try:
-        n=int(input("n:"))
-    except:
-        n="-"
-
-def ask_t():
-    global t
-    try:
-        t=int(input("t:"))
-    except:
-        t="-" 
-
-def ask_d():
-    global d
-    try:
-        d=int(input("d:"))
-    except:
-        d="-"
-        
-def ask_e():
-    global e
-    try:
-        e=int(input("e:"))
-    except:
-        e="-"
-
-def ask_c():
-    global c
-    try:
-        c=int(input("c:"))
-    except:
-        c="-"
-
-def ask_m():
-    global m
-    try:
-        m=int(input("m:"))
-    except:
-        m="-"
-        
 def return_p():
     global p
     try:
@@ -161,15 +109,6 @@ def find_invpow(x,n):
             return mid
     return mid + 1
 
-print("Go to http://factordb.com/index.php to determine p and q or if n is prime.")
-ask_p()
-ask_q()
-ask_n()
-ask_t()
-ask_d()
-ask_e()
-ask_m()
-ask_c()
 return_p()
 return_q()
 return_n()
