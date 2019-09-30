@@ -1,3 +1,5 @@
+/*Usage: ./random seed generator.c 1245 or refer picoCTF2018: roulette */
+
 #include <stdio.h>
 #include <stdlib.h>
 
